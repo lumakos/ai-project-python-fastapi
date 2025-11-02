@@ -2,9 +2,9 @@
 
 ```docker compose run --rm fastapi_app bash```
 
-python --version      # θα δείξει Python 3.13
-pip list              # θα δείξει τι έχει εγκατασταθεί
-fastapi dev main.py   # μπορείς να τρέξεις manual
+python --version 
+pip list         
+fastapi dev main.py 
 
 
 ## Documentation
@@ -18,7 +18,7 @@ https://fastapi.tiangolo.com/tutorial/#run-the-code
 4. SQLAlchemy ORM
 5. Alembic
 
-## Κάθε φορα που αλλάζεις τα models 
+## Run it every time that you make changes in Models
 ```
 docker compose exec fastapi_app alembic revision --autogenerate -m "init schema"
 ```
